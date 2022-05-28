@@ -3,19 +3,22 @@ import { getStoredCart } from "../utilities/fakedb";
 
 const useCart = (products) => {
   const [cart, setCart] = useState([]);
+
   useEffect(() => {
-    const storedCard = getStoredCart();
+    const storedCart = getStoredCart();
     const savedCart = [];
-    for (let id in storedCard) {
-      const addedProduct = products.find((product) => product.id === id);
-      if (addedProduct) {
-        const quantity = storedCard[id];
-        addedProduct.quantity = quantity;
-        savedCart.push(addedProduct);
+    for (const id in storedCart) {
+      const addProduct = products.find((product) => product.id === id);
+
+      if (addProduct) {
+        const quantity = storedCart[id];
+        addProduct.quantity = quantity;
+        savedCart.push(addProduct);
       }
     }
     setCart(savedCart);
   }, [products]);
+
   return [cart, setCart];
 };
 

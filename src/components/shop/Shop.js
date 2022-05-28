@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import useCart from "../../hooks/useCart";
 import useProducts from "../../hooks/useProducts";
 import { addToDb, getStoredCart } from "../../utilities/fakedb";
@@ -6,6 +5,7 @@ import Cart from "../cart/Cart";
 import Product from "../product/Product";
 import "./shop.css";
 const Shop = () => {
+  //custorm hoo
   const [products, setProducts] = useProducts();
   const [cart, setCart] = useCart(products);
 

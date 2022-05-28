@@ -1,0 +1,22 @@
+.rivew-order{
+  margin: 10px auto;
+  width: 50%;
+  border:1px solid red;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:5px;
+}
+
+.rivew-order img{
+  width: 100px;
+}
+
+.p-info{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 5px;
+}
