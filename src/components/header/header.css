@@ -1,0 +1,30 @@
+.header{
+  height: 80px;
+  background-color: rgb(0, 0, 22);
+  color:#fff;
+}
+.header{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 50px;
+}
+img.logo:hover{
+  cursor: pointer;
+}
+.navItems{
+  display: flex;
+  gap:15px;
+}
+.navItems a{
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  
+}
+.navItems a:hover{
+color:rgb(163, 152, 152);
+transition: all .3s;
+  
+}

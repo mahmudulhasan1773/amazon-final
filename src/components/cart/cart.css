@@ -1,0 +1,6 @@
+.cart{
+  padding: 10px;
+  position: sticky;
+  top:100px;
+  box-shadow: inset 2px 2px 3px 3px blue;;
+}
