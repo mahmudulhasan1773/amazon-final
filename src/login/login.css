@@ -1,0 +1,39 @@
+.logIn{
+  max-width: 500px;
+  width: 100%;
+  background-color: rgb(27, 4, 110);
+  color:#fff;
+  border-radius: 5px;
+  border: px solid blue;
+  box-shadow: 0px 0px 10px 0px blue;
+  margin: 10vh auto;
+  height: 70vh;
+  padding: 10px;
+  text-align: center;
+ 
+}
+
+.input-group{
+  margin-bottom: 10px;
+}
+.input-group label{
+  display:block;
+}
+.input-group>input{
+  text-align: center;
+  width: 100%;
+  padding: 5px 30px;
+  border-radius: 2px;
+  border: 0px;
+}
+.submit-btn{
+  padding: 5px 30px;
+  border-radius: 2px;
+  border: 0px;
+  margin: 10px;
+}
+
+.googleLogin{
+  margin-top:50px;
+  font-size: 14px;
+}
