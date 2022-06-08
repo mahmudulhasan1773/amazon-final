@@ -1,12 +1,19 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import "./signUp.css";
+import auth from "../../fiirebase.init";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
+  //navigat
+  const navigate = useNavigate();
+  //from hooks
+  const [createUserWithEmailAndPassword, user] =
+    useCreateUserWithEmailAndPassword(auth);
 
   const handleEmail = (e) => {
     const userEmail = e.target.value;
@@ -26,8 +33,16 @@ const SignUp = () => {
       setError("password not matched");
       return;
     }
-    console.log("v");
+    if (password.length < 6) {
+      setError("password must be 6 digit");
+      return;
+    }
+    createUserWithEmailAndPassword(email, password);
   };
+  //if user created{}
+  if (user) {
+    navigate("/shop");
+  }
   return (
     <div className="signUp">
       sign up.
