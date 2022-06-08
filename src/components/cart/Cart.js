@@ -1,7 +1,7 @@
 import React from "react";
 import "./cart.css";
 export default function Cart(props) {
-  console.log(props);
+  // console.log(props);
   let TotalPrice = 0;
   let totlaTax = 0;
   let quantity = 0;

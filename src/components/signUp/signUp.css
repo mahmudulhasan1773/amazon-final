@@ -8,7 +8,7 @@
   box-shadow: 0px 0px 10px 0px blue;
   margin: 10vh auto;
   height: 70vh;
-  padding: 10px;
+  padding: 50px;
   text-align: center;
  
 }
@@ -31,4 +31,10 @@
   border-radius: 2px;
   border: 0px;
   margin: 10px;
+}
+.googleLogin{
+  cursor: pointer;
+}
+.googleLogin:hover{
+  color: gold;
 }
